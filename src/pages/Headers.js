@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {
     Nav,
     NavItem,
-    Image
+    Popover,
 } from 'reactstrap';
 
 const Headers = (props) => {

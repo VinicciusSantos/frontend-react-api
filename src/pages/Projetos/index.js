@@ -1,6 +1,6 @@
 import React from "react";
 import Headers from "../Headers";
-import Footer from "../Footer"
+import Data from "./data"
 
 function Projetos(){
     return (
@@ -9,7 +9,7 @@ function Projetos(){
 
             <div className="flex-columun">
                 <h1>Pagina de Projetos</h1>
-                <Footer />
+                <Data/>
             </div>
         </div>
     );
