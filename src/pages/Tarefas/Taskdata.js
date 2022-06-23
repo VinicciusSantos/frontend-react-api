@@ -21,9 +21,10 @@ class taskdata extends Component{
     return(
       <div>
           {tarefas.map(tarefas => (
-            <div class="list-group" key={tarefas.id}>
-              <div class="list-group-item">{tarefas.id} {tarefas.nome}</div>
-            </div>
+              <div class="list-group rounded-pill" key={tarefas.id}>
+                <div class="list-group-item" >{tarefas.id} {tarefas.nome} {tarefas.data_criacao}</div>
+              </div>
+            
           ))}
       </div>
     )
