@@ -1,18 +1,10 @@
 import React from 'react';
-import Headers from './Headers';
-import Article from './Article';
-import Footer from './Footer';
+import Rout from './routes'
 
 function App (props) {
   return (
     <div className='d-flex'>
-        <Headers />
-
-        <div className='d-flex flex-column mt-5 ms-4'>
-          <Article />
-          <Footer />
-        </div>
-        
+      <Rout/>
     </div>    
   );
 };
