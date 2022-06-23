@@ -12,7 +12,7 @@ const Headers = (props) => {
 
     return (
         <div> 
-            <Nav className='d-flex flex-column bg' navbar style={{height:"100vh", width:"100px", backgroundColor:"#4E5C90"}}>
+            <Nav className='d-flex flex-column' navbar style={{height:"100vh", width:"100px", backgroundColor:"#4E5C90"}}>
                 <NavItem>
                     
                 </NavItem> 

@@ -8,7 +8,7 @@ function App (props) {
     <div className='d-flex'>
         <Headers />
 
-        <div className='d-flex flex-column'>
+        <div className='d-flex flex-column mt-5 ms-4'>
           <Article />
           <Footer />
         </div>
