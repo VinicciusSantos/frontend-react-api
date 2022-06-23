@@ -1,17 +1,8 @@
 import React, { useState } from 'react';
 import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText
+    Image
 } from 'reactstrap';
 
 const Headers = (props) => {
@@ -20,39 +11,12 @@ const Headers = (props) => {
     const toggle = () => setIsOpen(!isOpen);
 
     return (
-        <div className="d-flex flex-column">
-            <Navbar color="primary" dark expand="md">
-                <NavbarBrand href="/">Celke</NavbarBrand>
-                <NavbarToggler onClick={toggle} />
-                <Collapse isOpen={isOpen} navbar>
-                    <Nav className="mr-auto d-flex flex-column" navbar >
-                        <NavItem>
-                            <NavLink href="https://celke.com.br/">Site Celke</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-                        </NavItem>
-                        <UncontrolledDropdown nav inNavbar>
-                            <DropdownToggle nav caret>
-                                Options
-                </DropdownToggle>
-                            <DropdownMenu right>
-                                <DropdownItem>
-                                    Option 1
-                  </DropdownItem>
-                                <DropdownItem>
-                                    Option 2
-                  </DropdownItem>
-                                <DropdownItem divider />
-                                <DropdownItem>
-                                    Reset
-                  </DropdownItem>
-                            </DropdownMenu>
-                        </UncontrolledDropdown>
-                    </Nav>
-                    <NavbarText>Simple Text</NavbarText>
-                </Collapse>
-            </Navbar>
+        <div> 
+            <Nav className='d-flex flex-column bg' navbar style={{height:"100vh", width:"100px", backgroundColor:"#4E5C90"}}>
+                <NavItem>
+                    
+                </NavItem> 
+            </Nav>
         </div>
     );
 }

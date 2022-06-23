@@ -7,8 +7,12 @@ function App (props) {
   return (
     <div className='d-flex'>
         <Headers />
-        <Article />
-        <Footer />
+
+        <div className='d-flex flex-column'>
+          <Article />
+          <Footer />
+        </div>
+        
     </div>    
   );
 };
