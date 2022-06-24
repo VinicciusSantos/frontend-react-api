@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
-import Main from './pages/Main'
 import Projetos from './pages/Projetos'
 import Equipes from './pages/Equipes'
 import Pessoas from './pages/Pessoas'
@@ -11,7 +10,6 @@ function Rout() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route exact path="/" element={<Main/>}/>
                 <Route exact path="/projetos" element={<Projetos/>} />
                 <Route exact path="/equipes" element={<Equipes/>} />
                 <Route exact path="/pessoas" element={<Pessoas/>} />
