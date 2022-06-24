@@ -1,5 +1,6 @@
 import React from "react";
 import Data from "./data"
+import Background from "../background";
 
 function Projetos(){
     return (
@@ -9,6 +10,7 @@ function Projetos(){
                 <h1>Pagina de Projetos</h1>
 
             </div>
+            <Background />
         </div>
     );
 }
