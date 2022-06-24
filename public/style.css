@@ -46,6 +46,10 @@
     margin-left: 11px;
 }
 
+.btn1_p1 > img {
+    box-shadow: 0px 0px 5px var(--primary);
+}
+
 .btn1_p1 > h2 {
    color: var(--primary);
    text-shadow: 0px 0px 3px var(--primary);

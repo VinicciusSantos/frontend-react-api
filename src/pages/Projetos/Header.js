@@ -8,7 +8,7 @@ function Header () {
             <a href="/projetos">
                 <div className="btn1">
                     <div className="btn1_p1">
-                        <img width= "40px" height= "40px" src="assets/projetos_active.png"></img>
+                        <img width= "40px" height= "40px" src="assets/projetos_active.svg"></img>
                         <h2>Projetos</h2>
                     </div>
                     <div className="btn1_p2"></div>
