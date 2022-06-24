@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import api from '../../api'
-import { Table } from 'reactstrap';
 
 class ExibirProjetos extends Component{
     state = {
@@ -20,19 +19,27 @@ class ExibirProjetos extends Component{
       return(
         <div className="cont_table">
           <div>
-            <table class="table">
-              <tr>
-                  <th>Id</th>
-                  <th>Nome</th>
-                  <th>Inicio</th>
-              </tr>
-              {projetos.map(p => (
-                <tr key={p.id}>
-                  <td className='id_table'>{p.id}</td>
-                  <td>{p.nome}</td>
-                  <td>{p.data_criacao}</td> 
+            <table className="table">
+              <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Inicio</th>
+                    <th></th>
                 </tr>
-              ))}
+              </thead>
+              <tbody>
+                {projetos.map(p => (
+                  <tr key={p.id}>
+                    <td className='id_table'>{p.id}</td>
+                    <td>{p.nome}</td>
+                    <td>{p.data_criacao.substring(0,10)}</td>
+                    <td>
+                      <button><a href={"projetos/"+p.id}>Detalhar</a></button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
             </table>
             </div>
         </div>

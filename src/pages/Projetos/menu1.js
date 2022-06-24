@@ -3,8 +3,8 @@ import ExibirProjetos from "./data";
 
 function Menu1() {
     return (
-        <div className="menu1">
-            <div >
+        <div>
+            <div className="menu1">
                 {/* Searchbar */}
                 <div className="searchbar">
                     <input type="search" placeholder="Pesquise aqui..."></input>
