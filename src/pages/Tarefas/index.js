@@ -1,6 +1,5 @@
 import React from "react";
 import Data from "./data";
-import Background from "../background";
 import Header from "../Projetos/Header";
 
 
@@ -44,8 +43,6 @@ function Tarefas(){
 
                 </div>
                 </div>
-                    
-            <Background />
         </div>
     );
 }

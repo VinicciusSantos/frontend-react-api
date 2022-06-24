@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import api from '../../api'
 import { Table } from 'reactstrap';
 
-class exibirProjetos extends Component{
+class ExibirProjetos extends Component{
     state = {
       projetos: [],
     }
@@ -18,20 +18,26 @@ class exibirProjetos extends Component{
       const {projetos} = this.state;
   
       return(
-        <div>
-          <table class="table">
-            {projetos.map(p => (
-              <tr key={p.id}>
-                <td>{p.id}</td>
-                <td>{p.nome}</td>
-                <td>{p.data_criacao}</td>
-                <td>{p.descricao}</td>
+        <div className="cont_table">
+          <div>
+            <table class="table">
+              <tr>
+                  <th>Id</th>
+                  <th>Nome</th>
+                  <th>Inicio</th>
               </tr>
-            ))}
-          </table>
+              {projetos.map(p => (
+                <tr key={p.id}>
+                  <td className='id_table'>{p.id}</td>
+                  <td>{p.nome}</td>
+                  <td>{p.data_criacao}</td> 
+                </tr>
+              ))}
+            </table>
+            </div>
         </div>
       )
     }
   }
 
-  export default exibirProjetos;
+  export default ExibirProjetos;

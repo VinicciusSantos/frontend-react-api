@@ -102,13 +102,68 @@
  }
 
 
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=- Menu1 -=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
 .menu1 {
-    background-color: #595959;
+    background-color: var(--cinza2);
     border-radius: 20px;
     margin-left: 21px;
     margin-top: 20px;
     width: 551px;
-    height: 897px;
+    height: 95%;
     display: flex;
     justify-content: center;
+}
+
+.searchbar {
+    width: 500px;
+    height: 53px;
+    border-radius: 30px;
+    background-color: var(--cinza1);
+    margin-top: 34px;
+}
+
+.searchbar > input {
+    width: 400px;
+    height: 53px;
+    margin-left: 30px;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    background-color: var(--cinza1);
+}
+
+.mostrarProjetos {
+    margin-top: 67px;
+}
+
+.mostrarProjetos > h1 {
+    color: var(--primary);
+    font-size: 48;
+    text-shadow: 0px 0px 3px var(--primary);
+}
+
+.cont_table {
+    background-color: var(--cinza1);
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    color: var(--primary);
+}
+
+.id_table {
+    color: var(--light);
+}
+
+tr {
+    color: white;
 }

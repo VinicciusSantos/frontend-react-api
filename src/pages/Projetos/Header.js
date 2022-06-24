@@ -35,7 +35,7 @@ function Header () {
                 </div>
             </a>
 
-            <a href="/tarefass">
+            <a href="/tarefas">
                 <div className="btn2">
                     <div className="btn2_p1">
                         <img width= "40px" height= "40px" src="assets/tarefas.svg"></img>

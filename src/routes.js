@@ -10,6 +10,7 @@ function Rout() {
     return (
         <BrowserRouter>
             <Routes>
+                <Route exact path="/" element={<Projetos/>} />
                 <Route exact path="/projetos" element={<Projetos/>} />
                 <Route exact path="/equipes" element={<Equipes/>} />
                 <Route exact path="/pessoas" element={<Pessoas/>} />
