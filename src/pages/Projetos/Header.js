@@ -8,7 +8,7 @@ function Header () {
                 <a href="/projetos">
                     <div style={{width: "270px", height: "52px", boxShadow: "0px 0px 5px #FFB74A", borderRadius: "15px", backgroundColor: "#595959"}}>
                         <div style={{float:"left", display:"flex", marginTop:"5px", marginLeft:"11px"}}>
-                            <img width= "40px" height= "40px" src="assets/projetos_active.png"></img>
+                            <img width= "40px" height= "40px" src="assets/projetos_active.svg"></img>
                             <h2 style={{color: "#FFB74A", textShadow: "0px 0px 5px #FFB74A", marginLeft:"11px", marginTop: "6px", fontSize: "24px"}}>Projetos</h2>
                         </div>
                         <div style={{float:"right", backgroundColor: "#FFB74A", height: "52px", width: "11px", borderRadius: "0px 15px 15px 0px"}}></div>
