@@ -2,7 +2,7 @@ import React from "react";
 
 function Header () {
     return (
-        <div style={{marginLeft:"24px"}}>
+        <div style={{marginLeft:"24px", marginTop: "20px"}}>
             <div style={{backgroundColor: "#595959", width: "270px", height: "189px", borderRadius: "15px"}}></div>
             <div style={{marginTop: "22px"}}>
                 <a href="/projetos">
