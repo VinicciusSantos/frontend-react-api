@@ -1,7 +1,5 @@
 import React from "react";
 import Data from "./data"
-import Background from "../background";
-
 function Equipes(){
     return (
         <div className="d-flex justify-content-center align-items-center" style={{width: "100vw", height: "100vh"}}>
@@ -10,7 +8,6 @@ function Equipes(){
                 <h1>Pagina de Equipes</h1>
                
             </div>
-            <Background />
         </div>
     );
 }
