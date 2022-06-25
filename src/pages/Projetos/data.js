@@ -35,7 +35,7 @@ class ExibirProjetos extends Component{
                     <td>{p.nome}</td>
                     <td>{p.data_criacao.substring(0,10)}</td>
                     <td>
-                      <button><a href={"projetos/"+p.id}>Detalhar</a></button>
+                    <a href={"projetos/"+p.id}><button>Detalhar</button></a>
                     </td>
                   </tr>
                 ))}

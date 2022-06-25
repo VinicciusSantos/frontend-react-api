@@ -20,6 +20,7 @@ body {
 
 :root {
     --primary: #FFB74A;
+    --secondary: #7196F3;
     --light: #F2CA9A;
     --cinza1: #717171;
     --cinza2: #595959;
@@ -37,7 +38,7 @@ body {
     display: flex;
     width: 88.54vw;
     height: 83.62vh;
-    background-image: linear-gradient(113.43deg, #FFB74A -71.14%, #505050 16.53%, #595959 89.77%, #7196F3 141.93%);
+    background-image: linear-gradient(113.43deg, var(--primary) -71.14%, #505050 16.53%, #595959 89.77%, var(--secondary) 141.93%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
 }
@@ -63,10 +64,13 @@ body {
     height: 5.57%;
     margin-top: 1.5vh;
     border-radius: 1.5vh;
+    transition: .2s;
 }
 
 .btn1:hover, .btn2:hover {
-    background-color: var(--cinza1);
+    background-color: var(--cinza3);
+    transition: .2s;
+    transform: scale(1.05);
 }
 
 
@@ -162,26 +166,28 @@ body {
 
 .menu1 {
     background-color: var(--cinza2);
-    border-radius: 20px;
-    margin-left: 21px;
+    margin-left: 21px;  
     margin-top: 20px;
-    width: 551px;
     padding: 15px;
-    height: 95%;
+    
+    border-radius: 20px;
+    width: 36.01%;
+    height: 96.04%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .searchbar {
-    width: 500px;
+    width: 90.74%;
     height: 53px;
     border-radius: 30px;
     background-color: var(--cinza1);
 }
 
 .searchbar > input {
-    width: 400px;
+    width: calc(90.74% - 50px);
     height: 53px;
     margin-left: 30px;
     margin-right: 20px;
@@ -191,8 +197,29 @@ body {
     background-color: var(--cinza1);
 }
 
+.searchbar > button {
+    border: none;
+    background-color: transparent;
+    transition: .5s;
+}
+
+.searchbar > button:hover {
+    transform: scale(1.2)rotate(-10deg);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: .5s;
+}
+
+
+h1 {
+    font-size: 48px;
+    color: var(--primary);
+    text-shadow: 0px 0px 4px var(--primary);
+}
+
 .mostrarProjetos {
     margin-top: 67px;
+    height: calc(100% - 120px);
+    width: 100%;
 }
 
 .mostrarProjetos > h1 {
@@ -206,6 +233,7 @@ body {
     width: 100%;
     padding: 5px;
     border-radius: 15px;
+    height: calc(100% - 54px);
 }
 
 table {
@@ -243,17 +271,17 @@ td button {
     width: 89px;
     height: 16px;
     border-radius: 15px;
+    color: var(--cinza3);
     box-shadow: 0px 0px 5px var(--primary);
 }
 
-td button > a{
+td a{
     text-decoration: none;
-    color: white;
     font-size: 14px;
 }
 
-td button:hover > a {
-    color: var(--cinza3);
+td a:hover button {
+    transition: .5s;
 }
 
 
