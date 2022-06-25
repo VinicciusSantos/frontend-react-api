@@ -163,7 +163,6 @@ body {
     height: 53px;
     border-radius: 30px;
     background-color: var(--cinza1);
-    margin-top: 34px;
 }
 
 .searchbar > input {

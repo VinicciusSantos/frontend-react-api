@@ -29,7 +29,7 @@ function Header () {
                 <div className="btn2">
                     <div className="btn2_p1">
                         <img width= "40px" height= "40px" src="../assets/pessoas.svg"></img>
-                        <h2>pessoas</h2>
+                        <h2>Pessoas</h2>
                     </div>
                     <div className="btn2_p2"></div>
                 </div>
