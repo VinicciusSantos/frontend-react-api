@@ -1,46 +1,32 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import api from '../../api'
+import { useParams } from "react-router-dom";
 
-class ExibirProjetos extends Component{
-    state = {
-      projetos: [],
-    }
-  
-    async componentDidMount(){
-      const response = await api.get('/projetos');
-  
-      this.setState({ projetos: response.data })
-    }
-  
-    render() {
-  
-      const {projetos} = this.state;
-  
-      return(
-        <div className="cont_table">
-          <div>
-            <table className="table">
-              <tr>
-                  <th>Id</th>
-                  <th>Nome</th>
-                  <th>Inicio</th>
-                  <th></th>
-              </tr>
-              {projetos.map(p => (
-                <tr key={p.id}>
-                  <td className='id_table'>{p.id}</td>
-                  <td>{p.nome}</td>
-                  <td>{p.data_criacao.substring(0,10)}</td>
-                  <td>
-                    <button><a href={"projetos/"+p.id}>Detalhar</a></button>
-                  </td>
-                </tr>
-              ))}
-            </table>
-            </div>
-        </div>
-      )
-    }
-  }
+function Data() {
 
-  export default ExibirProjetos;
+    const { id } = useParams();
+
+    const [projetos, setProjetos] = useState([]);
+    useEffect(() => {
+      api.get('/projetos/'+id)
+        .then(res => {
+          setProjetos(res.data)
+        })
+        .catch((err) => {
+          console.error("ops! ocorreu um erro : " + err);
+        });
+    }, []);
+
+    return (
+      <div>
+        {projetos.map(projeto => (
+        <p key={projeto.Id}>
+          <h1>PROJETO {projeto.id}</h1>
+          <h2>{projeto.nome}</h2>
+        </p>
+        ))}
+      </div>
+    );
+}
+
+export default Data;

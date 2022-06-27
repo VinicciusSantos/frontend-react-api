@@ -11,8 +11,7 @@ function Menu1() {
                 </a>
 
                 <div className="title_projeto_id">
-                    <h1>PROJETO 01</h1>
-                    <h2>GP-Inovação</h2>
+                    <Data/>
                 </div>
             </div>
 
