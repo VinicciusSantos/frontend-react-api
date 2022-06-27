@@ -56,6 +56,21 @@ body {
     border-radius: 15px;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;            
+}
+  
+body::-webkit-scrollbar-track {
+background: var(--primary);   
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: red;    
+border-radius: 20px;      
+border: 3px solid var(--primary) !important;  
+}
+  
+
 /* -=-=-=-=-=-=-=-=-=-=-=-=-=- BOTÕES DO MENU -=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 /* Tamanho dos botões */
@@ -72,7 +87,6 @@ body {
     transition: .2s;
     transform: scale(1.05);
 }
-
 
 /* Cor do botão 1 */
 .btn1 {
@@ -110,12 +124,13 @@ body {
 }
 
 .btn1_p1 > h2 {
-   color: var(--primary);
+   color: var(--primary) !important;
    text-shadow: 0px 0px 3px var(--primary);
 }
 
 .btn2_p1 > h2 {
     color: var(--light);
+    text-shadow: none;
  }
 
  /* Div colorida que fica na direita do botão */
@@ -248,7 +263,9 @@ th {
 
 tr > td {
     color: white;
-    padding: 5px;
+    font-size: 15px;
+    padding-bottom: 4px !important;
+    padding-top: 4px !important;
 }
 
 tr:hover td {
