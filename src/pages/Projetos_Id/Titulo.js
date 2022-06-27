@@ -7,8 +7,10 @@ function Data() {
     const { id } = useParams();
 
     const [projetos, setProjetos] = useState([]);
+    
     useEffect(() => {
-      api.get('/projetos/'+id)
+      api
+        .get('/projetos/'+id)
         .then(res => {
           setProjetos(res.data)
         })

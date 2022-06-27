@@ -1,5 +1,5 @@
 import React from "react";
-import Data from "./data"
+import Data from "./Titulo"
 import Header from "../../components/header"
 import Menu1 from "./menu1";
 

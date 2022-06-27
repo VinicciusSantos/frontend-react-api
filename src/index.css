@@ -209,13 +209,6 @@ body {
     transition: .5s;
 }
 
-
-h1 {
-    font-size: 48px;
-    color: var(--primary);
-    text-shadow: 0px 0px 4px var(--primary);
-}
-
 .mostrarProjetos {
     margin-top: 67px;
     height: calc(100% - 120px);
@@ -309,16 +302,21 @@ td a:hover button {
     margin-top: 20px;
 }
 
-.title_projeto_id h1 {
+h1 {
     color: var(--primary);
     text-shadow: 0px 0px 4px var(--primary);
     margin-bottom: 0px;
     font-size: 48px;
 }
 
-.title_projeto_id h2 {
+h2 {
     color: var(--light);
     text-shadow: 0px 0px 4px var(--primary);
+}
+
+h3 {
+    color: var(--primary);
+    text-shadow: 0px 0px 3px var(--primary);
 }
 
 .Title_exibirTarefasProjeto {

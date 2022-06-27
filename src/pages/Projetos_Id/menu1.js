@@ -1,5 +1,6 @@
 import React from "react";
-import Data from "./data";
+import Data from "./Titulo";
+import Tarefas from "./Tarefas";
 
 function Menu1() {
     return (
@@ -17,19 +18,11 @@ function Menu1() {
 
             <div className="cont_tarefasdoprojeto">
                 <div className="Title_exibirTarefasProjeto">
-                    <h4>Tarefas do Projeto</h4>
+                    <h3>Tarefas do Projeto</h3>
                     <button className="btn_primary">Novo</button>
                 </div>
                 <div className="cont_table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Id</th>
-                                <th>Nome</th>
-                                <th>Inicio</th>
-                            </tr>
-                        </thead>
-                    </table>
+                    <Tarefas />
                 </div>
             </div>
         </div>
