@@ -31,8 +31,8 @@ function Tarefas() {
                     <tbody>
                         {tarefas.map(t => (
                             <tr key={t.id}>
-                                <td className='id_table'>{t.id}</td>
-                                <td>{t.nome}</td>
+                                <td className='id_table col-1'>{t.id}</td>
+                                <td className='col-11'>{t.nome}</td>
                             </tr>
                         ))}
                     </tbody>

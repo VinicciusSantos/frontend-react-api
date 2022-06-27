@@ -25,6 +25,7 @@ function Data() {
         <p key={projeto.Id}>
           <h1>PROJETO {projeto.id}</h1>
           <h2>{projeto.nome}</h2>
+          <p style={{color:"white"}}>{projeto.descricao}</p>
         </p>
         ))}
       </div>

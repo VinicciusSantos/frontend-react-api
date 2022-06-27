@@ -31,7 +31,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: absolute;
-    background: linear-gradient(135deg, var(--primary), #5a7ed9);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
 }
 
 .container_maior {
@@ -125,12 +125,10 @@ border: 3px solid var(--primary) !important;
 
 .btn1_p1 > h2 {
    color: var(--primary) !important;
-   text-shadow: 0px 0px 3px var(--primary);
 }
 
 .btn2_p1 > h2 {
     color: var(--light);
-    text-shadow: none;
  }
 
  /* Div colorida que fica na direita do botão */
@@ -143,7 +141,6 @@ border: 3px solid var(--primary) !important;
 
 .btn1_p2 {
     background-color: var(--primary);
-    text-shadow: 0px 0px 3px var(--primary);
 }
  
  .btn2_p2 {
@@ -233,7 +230,6 @@ border: 3px solid var(--primary) !important;
 .mostrarProjetos > h1 {
     color: var(--primary);
     font-size: 48;
-    text-shadow: 0px 0px 3px var(--primary);
 }
 
 .cont_table {
@@ -300,7 +296,7 @@ td a:hover button {
 
 .cont_tituloprojeto {
     width: 551px;
-    height: 211px;
+    height: auto;
     background-color: var(--cinza2);
     border-radius: 20px;
     padding: 15px;  
@@ -312,7 +308,8 @@ td a:hover button {
     padding: 15px;
     background-color: var(--cinza2);
     width: 551px;
-    height: 528px;
+    height: auto;
+    max-height: 485px;
 }
 
 .title_projeto_id {
@@ -321,19 +318,16 @@ td a:hover button {
 
 h1 {
     color: var(--primary);
-    text-shadow: 0px 0px 4px var(--primary);
     margin-bottom: 0px;
     font-size: 48px;
 }
 
 h2 {
     color: var(--light);
-    text-shadow: 0px 0px 4px var(--primary);
 }
 
 h3 {
     color: var(--primary);
-    text-shadow: 0px 0px 3px var(--primary);
 }
 
 .Title_exibirTarefasProjeto {
