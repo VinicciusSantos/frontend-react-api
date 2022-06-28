@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 :root {
     --roxo: #280948;
     --roxo1: #764BA2;
     --azul: #96B3FD;
     --azul1: #667EEA;
+    --cinza: #F5F5F7;
 }
 
 #root {
@@ -36,11 +41,11 @@
 
 /* Tamanho dos botões */
 .btn1, .btn2 {
-    width: 100%;
+    width: 30%;
     height: 4%;
-    margin-top: 1.5vh;
-    border-radius: 1.5vh;
+    margin-top: 3.5vh;
     transition: .2s;
+    
     
 }
 /* Cor do botão 1 */
@@ -61,6 +66,8 @@
     align-items: center;
     height: 100%;
     margin-left: 1vw;
+    gap:15%;
+    
 }
 
 .btn1:hover, .btn2:hover {
@@ -71,7 +78,34 @@
 }
 
 
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=- CHARTS -=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
+.charts{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.opcoes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+ .opbttn{
+    border-radius: 11px;
+    width: 100px;
+    height: 35px;
+    background-color: #F5F5F7;
+    border: none;
+ }
+
+ /* -=-=-=-=-=-=-=-=-=-=-=-=-=- TODOS OS PROJETOS -=-=-=-=-=-=-=-=-=-=-=-=-=- */
+ .search {
+   width: 250px;
+   height: 36px;
+   border-radius: 20px;
+   border: 1px solid var(--roxo);
+}
 
 /* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 

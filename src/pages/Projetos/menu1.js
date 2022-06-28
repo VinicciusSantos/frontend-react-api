@@ -16,7 +16,6 @@ function Menu1() {
                     <h1>PROJETOS</h1>
                     <button className="btn_primary">Novo</button>
                 </div>
-                
                 <ExibirProjetos/>
             </div>
         </div>

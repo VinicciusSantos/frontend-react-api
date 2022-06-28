@@ -2,6 +2,8 @@ import React from "react";
 import Data from "./data"
 import Header from "../../components/header"
 import Menu1 from "./menu1";
+import Grafico from "../../components/grafico"
+import AllProjects from "../../components/allprojects";
 
 function Projetos() {
     return (
@@ -15,8 +17,8 @@ function Projetos() {
                     <a href="/projetos">
                         <div className="btn1">
                             <div className="btn1_p1">
-                                <img width="40px" height="40px" src="assets/projetos_active.svg"></img>
-                                <h2>Projetos</h2>
+                                <img width="30px" height="30px" src="assets/projetos_active.svg"></img>
+                                <h5>Projetos</h5>
                             </div>
                             <div className="btn1_p2"></div>
                         </div>
@@ -25,8 +27,8 @@ function Projetos() {
                     <a href="/equipes">
                         <div className="btn2">
                             <div className="btn2_p1">
-                                <img width="40px" height="40px" src="assets/equipes.svg"></img>
-                                <h2>Equipes</h2>
+                                <img width="30px" height="30px" src="assets/equipes.svg"></img>
+                                <h5>Equipes</h5>
                             </div>
                             <div className="btn2_p2"></div>
                         </div>
@@ -35,8 +37,8 @@ function Projetos() {
                     <a href="/pessoas">
                         <div className="btn2">
                             <div className="btn2_p1">
-                                <img width="40px" height="40px" src="assets/pessoas.svg"></img>
-                                <h2>Pessoas</h2>
+                                <img width="30px" height="30px" src="assets/pessoas.svg"></img>
+                                <h5>Pessoas</h5>
                             </div>
                             <div className="btn2_p2"></div>
                         </div>
@@ -45,13 +47,40 @@ function Projetos() {
                     <a href="/tarefas">
                         <div className="btn2">
                             <div className="btn2_p1">
-                                <img width="40px" height="40px" src="assets/tarefas.svg"></img>
-                                <h2>Tarefas</h2>
+                                <img width="30px" height="30px" src="assets/tarefas.svg"></img>
+                                <h5>Tarefas</h5>
                             </div>
                             <div className="btn2_p2"></div>
                         </div>
                     </a>
-                </Header>           
+
+                    <a href="/configuracoes">
+                        <div className="btn2">
+                            <div className="btn2_p1">
+                                <img width="30px" height="30px" src="assets/Group 2.png"></img>
+                                <h5>Configurações</h5>
+                            </div>
+                            <div className="btn2_p2"></div>
+                        </div>
+                    </a>
+                </Header>  
+
+                <div className="charts">
+                    <h5>Projetos</h5>
+                    <div className="opcoes">
+                        <h6>Concluido</h6>
+                        <h6>Em desenvolvimento</h6>
+                        <button className="opbttn">Semanal
+                        <img src="assets/Group (1).png"></img>
+                        </button>
+                    </div>
+                    <div>
+                        <Grafico/> 
+                    </div>
+                    <div>
+                        <AllProjects/>
+                    </div>      
+                </div>         
             </div>
         </div>
     );
