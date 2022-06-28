@@ -6,11 +6,13 @@ function Data() {
 
     const { id } = useParams();
 
-    const [projetos, setProjetos] = useState([]);
+    const [equipes, setEquipes] = useState([]);
+    
     useEffect(() => {
-      api.get('/projetos/'+id)
+      api
+        .get('/equipes/'+id)
         .then(res => {
-          setProjetos(res.data)
+          setEquipes(res.data)
         })
         .catch((err) => {
           console.error("ops! ocorreu um erro : " + err);
@@ -19,17 +21,15 @@ function Data() {
 
     return (
       <div>
-        {projetos.map(projeto => (
-        <p key={projeto.Id}>
-          <h1>PROJETO {projeto.id}</h1>
-          <h2>{projeto.nome}</h2>
+        {equipes.map(equipe => (
+        <p key={equipe.Id}>
+          <h1>EQUIPE {equipe.id}</h1>
+          <h2>{equipe.nome}</h2>
+          {/* <p style={{color:"white"}}>{equipe.descricao}</p> */}
         </p>
         ))}
       </div>
     );
-
-
-    
 }
 
 export default Data;

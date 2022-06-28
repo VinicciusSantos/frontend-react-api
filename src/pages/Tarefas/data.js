@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import api from '../../api'
 
-class ExibirPessoas extends Component{
+class ExibirTarefas extends Component{
     state = {
-      pessoas: [],
+      tarefas: [],
     }
   
     async componentDidMount(){
-      const response = await api.get('/pessoas');
+      const response = await api.get('/tarefas');
   
-      this.setState({ pessoas: response.data })
+      this.setState({ tarefas: response.data })
     }
   
     render() {
   
-      const {pessoas} = this.state;
+      const {tarefas} = this.state;
   
       return(
         <div className="cont_table overflow-scroll">
@@ -24,18 +24,18 @@ class ExibirPessoas extends Component{
                 <tr>
                     <th>Id</th>
                     <th>Nome</th>
-                    <th>Profissão</th>
+                    <th>Inicio</th>
                     <th></th>
                 </tr>
               </thead>
               <tbody>
-                {pessoas.map(p => (
-                  <tr key={p.id}>
-                    <td className='id_table col-1'>{p.id}</td>
-                    <td className='col-7'>{p.nome}</td>
-                    <td className='col-7'>{p.profissao}</td>
+                {tarefas.map(t => (
+                  <tr key={t.id}>
+                    <td className='id_table'>{t.id}</td>
+                    <td>{t.nome}</td>
+                    <td>{t.data_criacao.substring(0,10)}</td>
                     <td>
-                    <a className='col-2' href={"pessoas/"+p.id}><button>Detalhar</button></a>
+                    <a href={"tarefas/"+t.id}><button>Detalhar</button></a>
                     </td>
                   </tr>
                 ))}
@@ -47,4 +47,4 @@ class ExibirPessoas extends Component{
     }
   }
 
-  export default ExibirPessoas;
+  export default ExibirTarefas;

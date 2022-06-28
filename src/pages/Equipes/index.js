@@ -1,6 +1,6 @@
 import React from "react";
-import Data from "./data"
 import Header from "../../components/header";
+import Menu1 from "./menu1";
 
 function Equipes(){
     return (
@@ -48,6 +48,8 @@ function Equipes(){
                         </div>
                     </a>
                 </Header>
+
+                <Menu1 />
             </div>
         </div>
     );
