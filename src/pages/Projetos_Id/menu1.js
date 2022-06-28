@@ -1,6 +1,9 @@
 import React from "react";
 import Data from "./data";
 
+
+
+
 function Menu1() {
     return (
         <div style={{padding:"20px"}}>
@@ -18,8 +21,10 @@ function Menu1() {
             <div className="cont_tarefasdoprojeto">
                 <div className="Title_exibirTarefasProjeto">
                     <h4>Tarefas do Projeto</h4>
-                    <button className="btn_primary">Novo</button>
+                    <button className="btn_primary" >Novo</button>
                 </div>
+
+            
                 <div className="cont_table">
                     <table>
                         <thead>
