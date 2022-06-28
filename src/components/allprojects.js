@@ -11,7 +11,7 @@ function AllProjects(){
                     <img src="assets/Group (1).png"></img>
                 </button>
                 <input type="search" placeholder="Pesquise aqui..." className='search'></input>
-                <button><img src="assets/search.png"></img></button>
+                <button className='lupa'><img src="assets/search.png"></img></button>
             </div>
 
             <div className="cards">

@@ -71,7 +71,7 @@ function Projetos() {
                         <h6>Concluido</h6>
                         <h6>Em desenvolvimento</h6>
                         <button className="opbttn">Semanal
-                        <img src="assets/Group (1).png"></img>
+                        <img src="assets/Group (1).png"/>
                         </button>
                     </div>
                     <div>
