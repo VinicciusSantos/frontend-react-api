@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../components/header";
 import Menu1 from "./menu1";
+import Data from "./data"
 
 function Tarefas(){
     return (

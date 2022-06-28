@@ -17,7 +17,7 @@ class ExibirTarefas extends Component{
       const {tarefas} = this.state;
   
       return(
-        <div className="cont_table">
+        <div className="cont_table overflow-scroll">
           <div>
             <table className="table">
               <thead>
