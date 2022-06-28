@@ -9,6 +9,9 @@ function Projetos() {
 
             <div className="container_maior">
                 <Header>
+                    <div>
+                        <img src="assets/download-removebg-preview 1.png"></img>
+                    </div>
                     <a href="/projetos">
                         <div className="btn1">
                             <div className="btn1_p1">
@@ -48,9 +51,7 @@ function Projetos() {
                             <div className="btn2_p2"></div>
                         </div>
                     </a>
-                </Header>
-                
-                <Menu1/>
+                </Header>           
             </div>
         </div>
     );

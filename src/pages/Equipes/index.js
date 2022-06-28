@@ -11,7 +11,7 @@ function Equipes(){
                     <a href="/projetos">
                         <div className="btn2">
                             <div className="btn2_p1">
-                                <img width= "40px" height= "40px" src="assets/projetos.svg"></img>
+                                <img width= "30px" height= "30px" src="assets/projetos.svg"></img>
                                 <h2>Projetos</h2>
                             </div>
                             <div className="btn2_p2"></div>
@@ -47,9 +47,17 @@ function Equipes(){
                             <div className="btn2_p2"></div>
                         </div>
                     </a>
-                </Header>
 
-                <Menu1 />
+                    <a href="/configurações">
+                        <div className="btn2">
+                            <div className="btn2_p1">
+                                <img src="assets/tarefas.svg"></img>
+                                <h2>Configurações</h2>
+                            </div>
+                            <div className="btn2_p2"></div>
+                        </div>
+                    </a>
+                </Header>
             </div>
         </div>
     );
