@@ -26,7 +26,7 @@ export const data = [
 
 export const options = {
   chart: {
-    
+    legend: { position: "bottom" },
   },
   width:609.45,
   height:334,
@@ -39,7 +39,7 @@ export function Grafico() {
   return (
     <Chart
       chartType="Line"
-      width="100%"
+      width="609px"
       height="334px"
       data={data}
       options={options}
