@@ -57,7 +57,7 @@ function Projetos() {
                     <a href="/configuracoes">
                         <div className="btn2">
                             <div className="btn2_p1">
-                                <img width="30px" height="30px" src="assets/Group 2.png"></img>
+                                <img width="30px" height="30px" src="assets/settings.svg"></img>
                                 <h5>Configurações</h5>
                             </div>
                             <div className="btn2_p2"></div>
@@ -69,10 +69,13 @@ function Projetos() {
                     <h5>Projetos</h5>
                     <div className="opcoes">
                         <h6>Concluido</h6>
-                        <h6>Em desenvolvimento</h6>
-                        <button className="opbttn">Semanal
-                        <img src="assets/seta.svg"/>
-                        </button>
+                        <h6 className="grey">Em desenvolvimento</h6>
+                        <div>
+                            <button className="opbttn">Semanal
+                                <img src="assets/seta.svg"/>
+                            </button>
+                        </div>
+                        
                     </div>
                     <div>
                         <Grafico/> 

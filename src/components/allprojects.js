@@ -6,7 +6,7 @@ function AllProjects(){
     return(
         <div>
             <div className='proj'>
-                <h5>Todos os projetos</h5>
+                <h4>Todos os projetos</h4>
                <div className='bt'>
                     <button  className='opbttn'>Filtros
                         <img src="assets/seta.svg"></img>
@@ -17,7 +17,7 @@ function AllProjects(){
             </div>
 
             <div className="title_projeto_id">
-                <div><ExibirProjetos/></div>
+                <ExibirProjetos/>
             </div>
         </div>
     )
