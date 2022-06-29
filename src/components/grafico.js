@@ -3,11 +3,7 @@ import { Chart } from "react-google-charts";
 
 // dados
 export const data = [
-  [
-    "Dia",
-    "Essa semana",
-    "Semana passada",
-  ],
+  ["Dia", "Essa semana", "Semana"],
   [1, 0, 2],
   [2, 2, 3],
   [3, 3.9, 4],
@@ -25,22 +21,17 @@ export const data = [
 ];
 
 export const options = {
-  chart: {
-    legend: { position: "bottom" },
-  },
-  width:609.45,
-  height:334,
-  colors: "#280948",
-  
-
+  curveType: "function",
+  legend: { position: "top" },
+  colors: ["#280948", "#667EEA"],
 };
 
 export function Grafico() {
   return (
     <Chart
-      chartType="Line"
+      chartType="LineChart"
       width="609px"
-      height="334px"
+      height="344px"
       data={data}
       options={options}
     />

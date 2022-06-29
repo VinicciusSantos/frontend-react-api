@@ -68,17 +68,20 @@ function Projetos() {
 
                 <div className="charts">
                     <h5>Projetos</h5>
-                    <div className="opcoes">
-                        <h6>Concluido</h6>
-                        <h6 className="grey">Em desenvolvimento</h6>
-                        <div>
+                    <div className="opcoes justify-content-between">
+                        <div className="d-flex op">
+                            <h6>Concluido</h6>
+                            <h6 className="grey">Em desenvolvimento</h6>
+                        </div>
+                    
+                        <div className="bttnsem">
                             <button className="opbttn">Semanal
                                 <img src="assets/seta.svg"/>
                             </button>
-                        </div>
-                        
-                    </div>
-                    <div>
+                        </div> 
+                        </div>   
+        
+                    <div className="grafico">
                         <Grafico/> 
                     </div>
                     <div>

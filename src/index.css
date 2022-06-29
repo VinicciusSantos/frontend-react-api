@@ -11,6 +11,7 @@
     --azul: #96B3FD;
     --azul1: #667EEA;
     --cinza: #F5F5F7;
+    --cinza1: grey;
 }
 
 #root {
@@ -88,10 +89,14 @@
 
 .opcoes{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
     width: 636px;
+}
+
+.op, .bttnsem{
+    gap: 30px;
+    margin-right: 10px; 
 }
 
 .charts h5{
@@ -105,18 +110,11 @@
     color: black;
     opacity: 0.3;
 }
- .opbttn{
-    border-radius: 11px;
-    width: 100px;
-    height: 35px;
-    border: none;
-
- }
-
- .opbttn img{
-    margin-left: 5px;
-    align-items: center;
- }
+ 
+.grafico{
+    width:609px;
+    height:344px;
+}
 
  /* -=-=-=-=-=-=-=-=-=-=-=-=-=- TODOS OS PROJETOS -=-=-=-=-=-=-=-=-=-=-=-=-=- */
  .proj{
@@ -125,6 +123,14 @@
     width: 637px;
     height: 36px;
     gap: 30px;    
+ }
+
+ .proj h4{
+    color: var(--roxo);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    width: 179px;
  }
 
  .bt{
@@ -152,13 +158,31 @@
     background-color: white;
 }
 
+.opbttn{
+    border-radius: 11px;
+    width: 100px;
+    height: 35px;
+    border: none;
+    color: var(--roxo);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+ }
+
+ .opbttn img{
+    margin-left: 5px;
+    align-items: center;
+ }
+
+
+
 .cont_table{
     background: linear-gradient(90.24deg, #764BA2 9.3%, #667EEA 99.93%);
     width: 606px;
     border-radius: 10px;
     height: 40px;
-    margin-bottom: 12px;
-    margin-top: 24px;
+    margin-top: 14px;
     color: white;
     font-weight: 600;
     font-size: 18px;
@@ -167,6 +191,7 @@
 
 .text{
     margin-top: 5px;
+    margin-left: 15px;
 }
 
 .cont_table button{
@@ -178,6 +203,7 @@
     margin-right: 20px;
     margin-top: 5px;
 } 
+
  /* -=-=-=-=-=-=-=-=-=-=-=-=-=- Calendario -=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
 .calendario{
