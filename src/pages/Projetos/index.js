@@ -1,5 +1,5 @@
 import React from "react";
-import Data from "./data"
+import Data from "../../components/data"
 import Header from "../../components/header"
 import Menu1 from "./menu1";
 import Grafico from "../../components/grafico"
@@ -12,7 +12,7 @@ function Projetos() {
             <div className="container_maior">
                 <Header>
                     <div>
-                        <img src="assets/download-removebg-preview 1.png"></img>
+                        <img src="assets/logo.svg"></img>
                     </div>
                     <a href="/projetos">
                         <div className="btn1">
@@ -71,7 +71,7 @@ function Projetos() {
                         <h6>Concluido</h6>
                         <h6>Em desenvolvimento</h6>
                         <button className="opbttn">Semanal
-                        <img src="assets/Group (1).png"/>
+                        <img src="assets/seta.svg"/>
                         </button>
                     </div>
                     <div>

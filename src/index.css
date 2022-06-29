@@ -99,13 +99,52 @@
     border: none;
  }
 
+ .opbttn img{
+    margin-left: 5px;
+    align-items: center;
+ }
+
  /* -=-=-=-=-=-=-=-=-=-=-=-=-=- TODOS OS PROJETOS -=-=-=-=-=-=-=-=-=-=-=-=-=- */
+ .proj{
+    display: flex;
+    width: 637px;
+    height: 36px;
+    gap: 30px;
+    
+    
+ }
+
+ .bt{
+    width: 388px;
+    height: 36px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    
+ }
+
+ .lupa img{
+    position: relative;
+    margin-left: -40px;
+    margin-top: 2px;
+    width: 20px;
+    height: 30px;
+ }
+ 
  .search {
-   width: 250px;
-   height: 36px;
-   border-radius: 20px;
-   border: 1px solid var(--roxo);
+    width: 250px;
+    height: 36px;
+    border-radius: 30px;
+    border: 1px solid var(--roxo);
+    background-color: white;
 }
+
+.cont_table{
+    background: linear-gradient(90.24deg, #764BA2 9.3%, #667EEA 99.93%);
+    width: 606px;
+    
+}
+
 /* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 * {

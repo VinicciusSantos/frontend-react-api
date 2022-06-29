@@ -1,5 +1,5 @@
 import React from "react";
-import ExibirProjetos from "./data";
+import ExibirProjetos from "../../components/data";
 
 function Menu1() {
     return (
