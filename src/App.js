@@ -1,9 +1,10 @@
 import React from 'react';
 import Rout from './routes'
+import './styles/GlobalStyles.css'
 
-function App (props) {
+function App () {
   return (
-    <div className='d-flex'>
+    <div>
       <Rout/>
     </div>    
   );
