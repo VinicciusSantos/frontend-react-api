@@ -17,4 +17,3 @@ export const Container = styled.div`
   background-color: var(--branco);
   border-radius: 32px;
 `;
-

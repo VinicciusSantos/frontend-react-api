@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.2.1",
     "css-loader": "^6.7.1"
   }
 }
