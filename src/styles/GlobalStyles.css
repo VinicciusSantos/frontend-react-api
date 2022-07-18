@@ -14,3 +14,11 @@
     --branco: #F5F5F7;
     --cinza1: grey;
 }
+
+.active {
+    color: var(--branco) !important;
+}
+
+.active path {
+    fill: var(--branco) !important;
+}

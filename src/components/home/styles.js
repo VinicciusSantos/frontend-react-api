@@ -8,6 +8,7 @@ import {
     Pessoas,
 } from '../../styles/Icons'
 
+
 export const Container = styled.div `
     background-color: var(--roxo);
     height: calc(100% - 48px);
@@ -71,7 +72,7 @@ const iconCSS = css`
     width: 50px;
 
     path {
-        fill: var(--branco);
+        fill: var(--cinza1);
     }
 
     @media (max-width: 1280px) {

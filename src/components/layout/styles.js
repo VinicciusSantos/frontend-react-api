@@ -16,4 +16,7 @@ export const Container = styled.div`
   height: 80.57vh;
   background-color: var(--branco);
   border-radius: 32px;
+
+  display: flex;
+  align-items: center;
 `;

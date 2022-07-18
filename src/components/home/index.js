@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 
 import { 
   Container,
@@ -12,7 +13,9 @@ import {
   ImgPessoas,
 } from './styles';
 
-function home() {
+function Home() {
+  let par = useLocation().pathname;
+  console.log(par)
   return (
     <Container>
         <ContLogo>
@@ -21,10 +24,16 @@ function home() {
 
         <NavMenu>
           <a href="/projetos">
-            <MenuButton>
-              <ImgProjetos/>
-              <span>Projetos</span>
+            {par === '/projetos' || par === '/'
+            ? <MenuButton> 
+              <ImgProjetos className='active'/>
+              <span className='active'>Projetos</span>
             </MenuButton>
+            : <MenuButton>
+            <ImgProjetos/>
+            <span>Projetos</span>
+          </MenuButton>
+            }
           </a>
           <a href="/equipes">
             <MenuButton>
@@ -39,7 +48,7 @@ function home() {
             </MenuButton>
           </a>
           <a href="/tarefas">
-            <MenuButton className='active'>
+            <MenuButton>
               <ImgTarefas/>
               <span>Tarefas</span>
             </MenuButton>
@@ -50,4 +59,4 @@ function home() {
   );
 }
 
-export default home;
+export default Home;
